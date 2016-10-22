@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "main.py", line 4, in <module>
+  File "c:\python34\lib\site-packages\zipextimporter.py", line 109, in load_module
+    self.get_data)
+ImportError: No module named 'sip'

@@ -6,11 +6,11 @@ import py2exe
 
 distutils.core.setup(
 
-    name='afit',
+    name='spafit',
     version='0.0.0',
     author='abel',
     author_email='j@abel.co',
-    url='http://www.github.com/jamesabel/afit',
+    url='http://www.github.com/jamesabel/spafit',
     license='LICENSE',  # points to the actual file
     description='py2exe test case',
 
