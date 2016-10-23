@@ -20,5 +20,5 @@ distutils.core.setup(
                           "includes" : ["PyQt5", "cryptography"]}},
     #console=[latus.const.MAIN_FILE],
     windows=['main.py'],
-    zipfile=None,  # a single executable
+    # zipfile=None,  # a single executable
 )
