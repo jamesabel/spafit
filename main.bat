@@ -1,2 +1,1 @@
-#!/usr/bin/env bash
-venv/bin/python main.py
+venv\scripts\python.exe main.py
