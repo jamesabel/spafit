@@ -149,3 +149,4 @@ venv
 dist
 build
 .idea/
+repo_ignore
