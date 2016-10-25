@@ -1,2 +1,7 @@
+# the venv in the base spafit is a superset of all the others for this OS
+#
 PyQt5
 cryptography
+# todo: put OS qualifier on the packages that are OS specific
+py2app
+osnap
