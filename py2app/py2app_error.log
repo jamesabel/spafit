@@ -1,0 +1,15 @@
+Oct 25 09:01:21 jamesmacbookpro main[46909]: main Error
+Oct 25 09:01:21 jamesmacbookpro main[46909]: 2016-10-25 09:01:21.706 main[46909:9206225] main Error
+Oct 25 09:01:23 jamesmacbookpro main[46909]: Traceback (most recent call last):
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   File "/Users/james/projects/spafit/py2app/dist/main.app/Contents/Resources/__boot__.py", line 351, in <module>
+Oct 25 09:01:23 jamesmacbookpro main[46909]:     _run()
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   File "/Users/james/projects/spafit/py2app/dist/main.app/Contents/Resources/__boot__.py", line 336, in _run
+Oct 25 09:01:23 jamesmacbookpro main[46909]:     exec(compile(source, path, 'exec'), globals(), globals())
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   File "/Users/james/projects/spafit/py2app/dist/main.app/Contents/Resources/main.py", line 4, in <module>
+Oct 25 09:01:23 jamesmacbookpro main[46909]:     from PyQt5.QtWidgets import QApplication, QLabel
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   File "PyQt5/QtWidgets.pyc", line 14, in <module>
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   File "PyQt5/QtWidgets.pyc", line 10, in __load
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   File "imp.pyc", line 342, in load_dynamic
+Oct 25 09:01:23 jamesmacbookpro main[46909]: ImportError: dlopen(/Users/james/projects/spafit/py2app/dist/main.app/Contents/Resources/lib/python3.5/lib-dynload/PyQt5/QtWidgets.so, 2): Library not loaded: @rpath/QtWidgets.framework/Versions/5/QtWidgets
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   Referenced from: /Users/james/projects/spafit/py2app/dist/main.app/Contents/Resources/lib/python3.5/lib-dynload/PyQt5/QtWidgets.so
+Oct 25 09:01:23 jamesmacbookpro main[46909]:   Reason: image not found
