@@ -150,3 +150,6 @@ dist
 build
 .idea/
 repo_ignore
+*.dmg
+logs
+temp
