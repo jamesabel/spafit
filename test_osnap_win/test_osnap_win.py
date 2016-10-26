@@ -58,7 +58,7 @@ class TestOsnapWin(spafit.Spafit):
         subprocess.check_call(launch_cmd, shell=True)
 
         # currently osnap doesn't take parameters
-        status_file_path = 'spafit.txt'
+        status_file_path = 'spafit_status.txt'
         while not os.path.exists(status_file_path):
             time.sleep(3)
             print('waiting for %s' % status_file_path)

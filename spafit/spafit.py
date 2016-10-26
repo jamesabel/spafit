@@ -8,6 +8,7 @@ import re
 class Spafit():
     def __init__(self, test_name):
         self.test_name = test_name
+        print('%s starting' % self.test_name)
         with open(get_status_file_path(test_name), 'w') as f:
             f.write('FAIL\n')
 
@@ -44,7 +45,7 @@ def get_python_dir():
         raise NotImplementedError
 
 
-def get_status_file_path(test_name):
+def get_status_file_path(test_name='spafit'):
     return '%s_status.txt' % test_name
 
 

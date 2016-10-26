@@ -11,9 +11,9 @@ def main():
     app = QApplication([])
 
     if len(sys.argv) >= 2:
-        test_name = sys.argv[1]
+        status_file_path = sys.argv[1]
     else:
-        test_name = 'spafit'
+        status_file_path = 'spafit_status.txt'
 
     m = b'does this work?'
     s = 'original message:\n' + str(m) + '\n\n'
@@ -31,8 +31,8 @@ def main():
 
     app.exec_()
 
-    with open('%s_status.txt' % test_name, 'w') as f:
-        f.write('PASSED\n')
+    with open(status_file_path, 'w') as f:
+        f.write('PASS\n')
 
 if __name__ == '__main__':
 
