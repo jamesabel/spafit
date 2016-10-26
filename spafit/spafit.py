@@ -8,7 +8,8 @@ import re
 class Spafit():
     def __init__(self, test_name):
         self.test_name = test_name
-        test_init(self.test_name)
+        with open(get_status_file_path(test_name), 'w') as f:
+            f.write('FAIL\n')
 
     def run(self):
         # derived classes provide this
@@ -45,11 +46,6 @@ def get_python_dir():
 
 def get_status_file_path(test_name):
     return '%s_status.txt' % test_name
-
-
-def test_init(test_name):
-    with open(get_status_file_path(test_name), 'w') as f:
-        f.write('FAIL\n')
 
 
 def copy_files(src_dir, dest_dir):

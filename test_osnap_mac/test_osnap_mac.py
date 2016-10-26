@@ -7,7 +7,7 @@ import time
 
 sys.path.insert(0,'..')
 import spafit.spafit as spafit
-
+import spafit.osnap_test_util as osnap_test_util
 
 class TestOsnapMac(spafit.Spafit):
     def __init__(self):
@@ -15,7 +15,7 @@ class TestOsnapMac(spafit.Spafit):
 
     def run(self):
 
-        for d in ['build', 'dist', 'venv']:
+        for d in ['build', 'dist']:
             try:
                 shutil.rmtree(d)
             except FileNotFoundError:
@@ -25,8 +25,7 @@ class TestOsnapMac(spafit.Spafit):
         # osnap expects this dir so we have to make it, even though its empty
         os.makedirs(self.test_name, exist_ok=True)
 
-        subprocess.check_call('./make_venv.sh', shell=True)
-        subprocess.check_call('./make_osnapy.sh', shell=True)
+        osnap_test_util.make_osnapy(True)
         subprocess.check_call('./make_installer.sh', shell=True)
 
         status_file = 'spafit_status.txt'  # we don't pass in a parameter so it's the generic name
@@ -40,6 +39,8 @@ class TestOsnapMac(spafit.Spafit):
             time.sleep(3)
             print('waiting for %s' % status_file_path)
         shutil.move(status_file_path, '%s_status.txt' % self.test_name)
+
+        return True
 
 if __name__ == '__main__':
     t = TestOsnapMac()

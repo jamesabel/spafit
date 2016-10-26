@@ -13,14 +13,13 @@ class TestPy2app(spafit.Spafit):
 
     def run(self):
 
-        for d in ['build', 'dist', '.eggs', 'venv']:
+        for d in ['build', 'dist', '.eggs']:
             try:
                 shutil.rmtree(d)
             except FileNotFoundError:
                 pass
 
         spafit.copy_files('..', '.')
-        subprocess.check_call('./make_venv.sh', shell=True)
 
         # py2app won't work from my venv so I have to install (pollute) my base python3
         # e.g. https://bitbucket.org/ronaldoussoren/py2app/issues/61/py2app-run-in-virtualenv-does-not-copy
@@ -31,6 +30,7 @@ class TestPy2app(spafit.Spafit):
         subprocess.check_call('open ./dist/main.app', env={}, shell=True)
         spafit.trim_log(self.test_name)
 
+        return True
 
 if __name__ == '__main__':
     t = TestPy2app()

@@ -1,6 +1,6 @@
 
 import distutils.core
-import py2exe
+import test_py2exe
 
 # todo: WIP - finish on a Windows system
 

@@ -1,4 +1,6 @@
 
+# todo: make the mac and win versions source the same file, since they are identical except for application name
+
 import osnap.installer
 
 

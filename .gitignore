@@ -153,3 +153,5 @@ repo_ignore
 *.dmg
 logs
 temp
+installers
+osnapy

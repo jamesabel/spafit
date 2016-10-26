@@ -2,6 +2,7 @@
 #
 PyQt5
 cryptography
-# todo: put OS qualifier on the packages that are OS specific
-py2app
+py2app; sys_platform == 'darwin'
+py2exe; sys_platform == 'win32'
+pynsist; sys_platform == 'win32'
 osnap
