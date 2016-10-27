@@ -7,6 +7,7 @@ import time
 
 sys.path.insert(0,'..')
 import spafit.spafit as spafit
+import spafit.spafit_mac as spafit_mac
 
 
 class TestOsnapMac(spafit.Spafit):
@@ -15,8 +16,7 @@ class TestOsnapMac(spafit.Spafit):
 
     def run(self):
 
-        status_file_path = os.path.abspath(os.path.join('dist', '%s.app' % self.test_name, 'Contents', 'MacOS',
-                                                        spafit.get_status_file_path()))
+        status_file_path = spafit_mac.get_mac_status_file_path(self.test_name)
 
         for d in ['build', 'dist']:
             try:
@@ -39,7 +39,7 @@ class TestOsnapMac(spafit.Spafit):
         while not os.path.exists(status_file_path):
             time.sleep(3)
             print('waiting for %s (%s)' % (status_file_path, str(time.time())))
-        shutil.move(status_file_path, '%s_status.txt' % self.test_name)
+        shutil.move(status_file_path, spafit.get_status_file_name(self.test_name))
 
         print('%s done' % self.test_name)
 
