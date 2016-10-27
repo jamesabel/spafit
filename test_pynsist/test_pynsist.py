@@ -52,7 +52,7 @@ class TestPynsist(spafit.Spafit):
             print('waiting for %s' % launch_pyw)
             time.sleep(5)
         time.sleep(10)  # ensure all files written out
-        launch_cmd = '%s "%s" %s' % (pyw_exe, launch_pyw, os.path.abspath(spafit.get_status_file_path(self.test_name)))
+        launch_cmd = '%s "%s" %s' % (pyw_exe, launch_pyw, os.path.abspath(spafit.get_status_file_name(self.test_name)))
         print(launch_cmd)
         subprocess.check_call(launch_cmd, shell=True)
 

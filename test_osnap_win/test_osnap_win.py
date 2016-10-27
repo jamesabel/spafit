@@ -9,6 +9,7 @@ sys.path.insert(0,'..')
 import spafit.spafit as spafit
 import spafit.osnap_test_util as osnap_test_util
 
+
 class TestOsnapWin(spafit.Spafit):
     def __init__(self):
         super().__init__('osnap_win')
@@ -62,7 +63,7 @@ class TestOsnapWin(spafit.Spafit):
         while not os.path.exists(status_file_path):
             time.sleep(3)
             print('waiting for %s' % status_file_path)
-        shutil.move(status_file_path, spafit.get_status_file_path(self.test_name))
+        shutil.move(status_file_path, spafit.get_status_file_name(self.test_name))
 
         return True
 
