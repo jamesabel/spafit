@@ -72,16 +72,35 @@ def trim_log(test_name):
     input('please hit return when the log window comes up')
     print('ok - continuing - reading %s' % system_log_path)
 
-    with open(system_log_path) as f:
-        lines = [l.strip() for l in f]
+    lines = []
+    print('reading %s' % system_log_path)
+    with open(system_log_path, 'rb') as f:
+        for l in f:
+            try:
+                l = l.decode()
+            except UnicodeDecodeError:
+                l = None
+            if l:
+                l = l.strip()
+            # print(l)
+            if l:
+                lines.append(l.strip())
+
+    # e.g.:
+    # Oct 26 23:44:42 jamesmacbookpro main[72126]: main Error
+    # Oct 26 23:44:42 jamesmacbookpro main[72126]: 2016-10-26 23:44:42.881 main[72126:4588758] main Error
+    # ...
     match = re.search(r'%s\[(\d+)\]' % app_name, lines[-1])
     key_string = None
     if match:
         key_string = '%s[%s]' % (app_name, match.group(1))
-    else:
-        print('fatal error reading %s' % system_log_path)
-        exit()
-    with open('%s_error.log' % test_name, 'w') as f:
+
+    # e.g.:
+    # Oct 27 22:21:11 jamesmacbookpro com.apple.xpc.launchd[1] (co.abel.main.368672[4464]): Service exited with abnormal code: 1
+    # (need to then look at the output from the app separately from running the .app)
+    if 'co.abel.main' in lines[-1]:
+        key_string = lines[-1]
+    with open('%s_1_error.log' % test_name, 'w') as f:
         for line in lines:
             if key_string in line:
                 f.write('%s\n' % line)

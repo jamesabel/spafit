@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/james/projects/spafit/test_briefcase_mac/macOS/main.app/Contents/Resources/python/lib/python3.5/runpy.py", line 184, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/james/projects/spafit/test_briefcase_mac/macOS/main.app/Contents/Resources/python/lib/python3.5/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/james/projects/spafit/test_briefcase_mac/macOS/main.app/Contents/Resources/app/main/app.py", line 6, in <module>
+    import cryptography.fernet
+  File "/Users/james/projects/spafit/test_briefcase_mac/macOS/main.app/Contents/Resources/app_packages/cryptography/fernet.py", line 17, in <module>
+    from cryptography.hazmat.primitives import hashes, padding
+  File "/Users/james/projects/spafit/test_briefcase_mac/macOS/main.app/Contents/Resources/app_packages/cryptography/hazmat/primitives/padding.py", line 13, in <module>
+    from cryptography.hazmat.bindings._padding import lib
+ImportError: No module named '_cffi_backend'
