@@ -1,0 +1,326 @@
+
+# *** Python 3.5 ***
+
+c:\Users\james\projects\spafit\test_cx_freeze>venv\Scripts\pip3.exe install -U -r requirements.txt
+Collecting PyQt5 (from -r requirements.txt (line 1))
+  Using cached PyQt5-5.7-cp35-none-win_amd64.whl
+Collecting cryptography (from -r requirements.txt (line 2))
+  Using cached cryptography-1.5.2-cp35-cp35m-win_amd64.whl
+Collecting cx_freeze (from -r requirements.txt (line 3))
+  Using cached cx_Freeze-4.3.4.tar.gz
+Collecting sip (from PyQt5->-r requirements.txt (line 1))
+  Using cached sip-4.18.1-cp35-none-win_amd64.whl
+Collecting cffi>=1.4.1 (from cryptography->-r requirements.txt (line 2))
+  Using cached cffi-1.8.3-cp35-cp35m-win_amd64.whl
+Collecting pyasn1>=0.1.8 (from cryptography->-r requirements.txt (line 2))
+  Using cached pyasn1-0.1.9-py2.py3-none-any.whl
+Collecting idna>=2.0 (from cryptography->-r requirements.txt (line 2))
+  Using cached idna-2.1-py2.py3-none-any.whl
+Requirement already up-to-date: setuptools>=11.3 in c:\users\james\projects\spafit\test_cx_freeze\venv\lib\site-packages (from cryptography->-r requirements.txt (line 2))
+Collecting six>=1.4.1 (from cryptography->-r requirements.txt (line 2))
+  Using cached six-1.10.0-py2.py3-none-any.whl
+Collecting pycparser (from cffi>=1.4.1->cryptography->-r requirements.txt (line 2))
+Installing collected packages: sip, PyQt5, pycparser, cffi, pyasn1, idna, six, cryptography, cx-freeze
+  Running setup.py install for cx-freeze ... error
+    Complete output from command c:\users\james\projects\spafit\test_cx_freeze\venv\scripts\python.exe -u -c "import setuptools, tokenize;__file__='C:\\Users\\james\\AppData\\Local\\Temp\\pip-build-v084ipn9\\cx-freeze\\s
+etup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record C:\Users\james\AppData\Local\Temp\pip-cmdndupo-record\install-record.txt --single-version
+-externally-managed --compile --install-headers c:\users\james\projects\spafit\test_cx_freeze\venv\include\site\python3.5\cx-freeze:
+    adding base module named _bootlocale
+    adding base module named _collections_abc
+    adding base module named _compression
+    adding base module named _dummy_thread
+    adding base module named _frozen_importlib
+    adding base module named _strptime
+    adding base module named _threading_local
+    adding base module named _weakrefset
+    adding base module named abc
+    adding base module named argparse
+    adding base module named base64
+    adding base module named bz2
+    adding base module named calendar
+    adding base module named codecs
+    adding base module named collections
+    adding base module named collections.abc
+    adding base module named contextlib
+    adding base module named copy
+    adding base module named copyreg
+    adding base module named datetime
+    adding base module named dummy_threading
+    adding base module named encodings
+    adding base module named encodings.aliases
+    adding base module named encodings.ascii
+    adding base module named encodings.base64_codec
+    adding base module named encodings.big5
+    adding base module named encodings.big5hkscs
+    adding base module named encodings.bz2_codec
+    adding base module named encodings.charmap
+    adding base module named encodings.cp037
+    adding base module named encodings.cp1006
+    adding base module named encodings.cp1026
+    adding base module named encodings.cp1125
+    adding base module named encodings.cp1140
+    adding base module named encodings.cp1250
+    adding base module named encodings.cp1251
+    adding base module named encodings.cp1252
+    adding base module named encodings.cp1253
+    adding base module named encodings.cp1254
+    adding base module named encodings.cp1255
+    adding base module named encodings.cp1256
+    adding base module named encodings.cp1257
+    adding base module named encodings.cp1258
+    adding base module named encodings.cp273
+    adding base module named encodings.cp424
+    adding base module named encodings.cp437
+    adding base module named encodings.cp500
+    adding base module named encodings.cp65001
+    adding base module named encodings.cp720
+    adding base module named encodings.cp737
+    adding base module named encodings.cp775
+    adding base module named encodings.cp850
+    adding base module named encodings.cp852
+    adding base module named encodings.cp855
+    adding base module named encodings.cp856
+    adding base module named encodings.cp857
+    adding base module named encodings.cp858
+    adding base module named encodings.cp860
+    adding base module named encodings.cp861
+    adding base module named encodings.cp862
+    adding base module named encodings.cp863
+    adding base module named encodings.cp864
+    adding base module named encodings.cp865
+    adding base module named encodings.cp866
+    adding base module named encodings.cp869
+    adding base module named encodings.cp874
+    adding base module named encodings.cp875
+    adding base module named encodings.cp932
+    adding base module named encodings.cp949
+    adding base module named encodings.cp950
+    adding base module named encodings.euc_jis_2004
+    adding base module named encodings.euc_jisx0213
+    adding base module named encodings.euc_jp
+    adding base module named encodings.euc_kr
+    adding base module named encodings.gb18030
+    adding base module named encodings.gb2312
+    adding base module named encodings.gbk
+    adding base module named encodings.hex_codec
+    adding base module named encodings.hp_roman8
+    adding base module named encodings.hz
+    adding base module named encodings.idna
+    adding base module named encodings.iso2022_jp
+    adding base module named encodings.iso2022_jp_1
+    adding base module named encodings.iso2022_jp_2
+    adding base module named encodings.iso2022_jp_2004
+    adding base module named encodings.iso2022_jp_3
+    adding base module named encodings.iso2022_jp_ext
+    adding base module named encodings.iso2022_kr
+    adding base module named encodings.iso8859_1
+    adding base module named encodings.iso8859_10
+    adding base module named encodings.iso8859_11
+    adding base module named encodings.iso8859_13
+    adding base module named encodings.iso8859_14
+    adding base module named encodings.iso8859_15
+    adding base module named encodings.iso8859_16
+    adding base module named encodings.iso8859_2
+    adding base module named encodings.iso8859_3
+    adding base module named encodings.iso8859_4
+    adding base module named encodings.iso8859_5
+    adding base module named encodings.iso8859_6
+    adding base module named encodings.iso8859_7
+    adding base module named encodings.iso8859_8
+    adding base module named encodings.iso8859_9
+    adding base module named encodings.johab
+    adding base module named encodings.koi8_r
+    adding base module named encodings.koi8_t
+    adding base module named encodings.koi8_u
+    adding base module named encodings.kz1048
+    adding base module named encodings.latin_1
+    adding base module named encodings.mac_arabic
+    adding base module named encodings.mac_centeuro
+    adding base module named encodings.mac_croatian
+    adding base module named encodings.mac_cyrillic
+    adding base module named encodings.mac_farsi
+    adding base module named encodings.mac_greek
+    adding base module named encodings.mac_iceland
+    adding base module named encodings.mac_latin2
+    adding base module named encodings.mac_roman
+    adding base module named encodings.mac_romanian
+    adding base module named encodings.mac_turkish
+    adding base module named encodings.mbcs
+    adding base module named encodings.palmos
+    adding base module named encodings.ptcp154
+    adding base module named encodings.punycode
+    adding base module named encodings.quopri_codec
+    adding base module named encodings.raw_unicode_escape
+    adding base module named encodings.rot_13
+    adding base module named encodings.shift_jis
+    adding base module named encodings.shift_jis_2004
+    adding base module named encodings.shift_jisx0213
+    adding base module named encodings.tis_620
+    adding base module named encodings.undefined
+    adding base module named encodings.unicode_escape
+    adding base module named encodings.unicode_internal
+    adding base module named encodings.utf_16
+    adding base module named encodings.utf_16_be
+    adding base module named encodings.utf_16_le
+    adding base module named encodings.utf_32
+    adding base module named encodings.utf_32_be
+    adding base module named encodings.utf_32_le
+    adding base module named encodings.utf_7
+    adding base module named encodings.utf_8
+    adding base module named encodings.utf_8_sig
+    adding base module named encodings.uu_codec
+    adding base module named encodings.zlib_codec
+    adding base module named functools
+    adding base module named genericpath
+    adding base module named gettext
+    adding base module named heapq
+    adding base module named io
+    adding base module named keyword
+    adding base module named linecache
+    adding base module named locale
+    adding base module named ntpath
+    adding base module named operator
+    adding base module named optparse
+    adding base module named os
+    adding base module named posixpath
+    adding base module named quopri
+    adding base module named re
+    adding base module named reprlib
+    adding base module named sre_compile
+    adding base module named sre_constants
+    adding base module named sre_parse
+    adding base module named stat
+    adding base module named string
+    adding base module named stringprep
+    adding base module named struct
+    adding base module named textwrap
+    adding base module named threading
+    adding base module named token
+    adding base module named tokenize
+    adding base module named traceback
+    adding base module named types
+    adding base module named warnings
+    adding base module named weakref
+    running install
+    running build
+    running build_py
+    creating build\lib.win-amd64-3.5
+    creating build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\common.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\dist.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\finder.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\freezer.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\hooks.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\macdist.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\main.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\setupwriter.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\windist.py -> build\lib.win-amd64-3.5\cx_Freeze
+    copying cx_Freeze\__init__.py -> build\lib.win-amd64-3.5\cx_Freeze
+    creating build\lib.win-amd64-3.5\cx_Freeze\initscripts
+    copying cx_Freeze\initscripts\Console.py -> build\lib.win-amd64-3.5\cx_Freeze\initscripts
+    copying cx_Freeze\initscripts\ConsoleKeepPath.py -> build\lib.win-amd64-3.5\cx_Freeze\initscripts
+    copying cx_Freeze\initscripts\ConsoleSetLibPath.py -> build\lib.win-amd64-3.5\cx_Freeze\initscripts
+    copying cx_Freeze\initscripts\SharedLib.py -> build\lib.win-amd64-3.5\cx_Freeze\initscripts
+    copying cx_Freeze\initscripts\SharedLibSource.py -> build\lib.win-amd64-3.5\cx_Freeze\initscripts
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\advanced
+    copying cx_Freeze\samples\advanced\advanced_1.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\advanced
+    copying cx_Freeze\samples\advanced\advanced_2.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\advanced
+    copying cx_Freeze\samples\advanced\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\advanced
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\matplotlib
+    copying cx_Freeze\samples\matplotlib\matplotlib_eg.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\matplotlib
+    copying cx_Freeze\samples\matplotlib\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\matplotlib
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\PyQt4
+    copying cx_Freeze\samples\PyQt4\PyQt4app.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\PyQt4
+    copying cx_Freeze\samples\PyQt4\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\PyQt4
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\relimport
+    copying cx_Freeze\samples\relimport\relimport.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\relimport
+    copying cx_Freeze\samples\relimport\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\relimport
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\service
+    copying cx_Freeze\samples\service\Config.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\service
+    copying cx_Freeze\samples\service\ServiceHandler.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\service
+    copying cx_Freeze\samples\service\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\service
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\simple
+    copying cx_Freeze\samples\simple\hello.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\simple
+    copying cx_Freeze\samples\simple\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\simple
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\Tkinter
+    copying cx_Freeze\samples\Tkinter\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\Tkinter
+    copying cx_Freeze\samples\Tkinter\SimpleTkApp.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\Tkinter
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\wx
+    copying cx_Freeze\samples\wx\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\wx
+    copying cx_Freeze\samples\wx\wxapp.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\wx
+    creating build\lib.win-amd64-3.5\cx_Freeze\samples\zope
+    copying cx_Freeze\samples\zope\qotd.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\zope
+    copying cx_Freeze\samples\zope\setup.py -> build\lib.win-amd64-3.5\cx_Freeze\samples\zope
+    running build_ext
+    building 'cx_Freeze.util' extension
+    creating build\temp.win-amd64-3.5\Release
+    creating build\temp.win-amd64-3.5\Release\source
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -Ic:\users\james\projects\spafit\test_cx_freeze\venv\include -Ic:\Users\james\AppData\Local\Programs\Pyt
+hon\Python35\include -Ic:\Users\james\AppData\Local\Programs\Python\Python35\include "-IC:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" "-IC:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INC
+LUDE" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\shared" "-IC:\Pr
+ogram Files (x86)\Windows Kits\10\include\10.0.10586.0\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\winrt" /Tcsource/util.c /Fobuild\temp.win-amd64-3.5\Release\source/util.obj
+    util.c
+    source/util.c(277): warning C4311: 'type cast': pointer truncation from 'HANDLE' to 'long'
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\link.exe /nologo /INCREMENTAL:NO /LTCG /DLL /MANIFEST:EMBED,ID=2 /MANIFESTUAC:NO /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\libs /
+LIBPATH:c:\Users\james\AppData\Local\Programs\Python\Python35\libs /LIBPATH:c:\Users\james\AppData\Local\Programs\Python\Python35 /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\PCbuild\amd64 "/LIBPATH:C:\Pro
+gram Files (x86)\Microsoft Visual Studio 14.0\VC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\ucrt\x64" "
+/LIBPATH:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\um\x64" imagehlp.lib Shlwapi.lib /EXPORT:PyInit_util build\temp.win-amd64-3.5\Rele
+ase\source/util.obj /OUT:build\lib.win-amd64-3.5\cx_Freeze\util.cp35-win_amd64.pyd /IMPLIB:build\temp.win-amd64-3.5\Release\source\util.cp35-win_amd64.lib
+    util.obj : warning LNK4197: export 'PyInit_util' specified multiple times; using first specification
+       Creating library build\temp.win-amd64-3.5\Release\source\util.cp35-win_amd64.lib and object build\temp.win-amd64-3.5\Release\source\util.cp35-win_amd64.exp
+    Generating code
+    Finished generating code
+    creating build\temp.win-amd64-3.5\Release\source\bases
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -Ibuild\temp.win-amd64-3.5 -Ic:\users\james\projects\spafit\test_cx_freeze\venv\include -Ic:\Users\james
+\AppData\Local\Programs\Python\Python35\include -Ic:\Users\james\AppData\Local\Programs\Python\Python35\include "-IC:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" "-IC:\Program Files (x86)\Microsoft Visua
+l Studio 14.0\VC\ATLMFC\INCLUDE" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10
+.0.10586.0\shared" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\winrt" /Tcsource/bases/Console.c /Fobuild\temp.win-amd64-3.5\Release\so
+urce/bases/Console.obj
+    Console.c
+    creating C:\Users\james\AppData\Local\Temp\pip-build-v084ipn9\cx-freeze\build\lib.win-amd64-3.5\cx_Freeze\bases
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\link.exe /nologo /INCREMENTAL:NO /LTCG /MANIFEST:EMBED,ID=1 /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\libs /LIBPATH:c:\Users\jame
+s\AppData\Local\Programs\Python\Python35\libs /LIBPATH:c:\Users\james\AppData\Local\Programs\Python\Python35 /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\PCbuild\amd64 "/LIBPATH:C:\Program Files (x86)\Micr
+osoft Visual Studio 14.0\VC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\ucrt\x64" "/LIBPATH:C:\Program F
+iles (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\um\x64" build\temp.win-amd64-3.5\Release\source/bases/Console.obj /OUT:build\lib.win-amd64-3.5\cx_Freez
+e\bases\Console.exe /MANIFEST
+    Generating code
+    Finished generating code
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -Ic:\users\james\projects\spafit\test_cx_freeze\venv\include -Ic:\Users\james\AppData\Local\Programs\Pyt
+hon\Python35\include -Ic:\Users\james\AppData\Local\Programs\Python\Python35\include "-IC:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" "-IC:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INC
+LUDE" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\shared" "-IC:\Pr
+ogram Files (x86)\Windows Kits\10\include\10.0.10586.0\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\winrt" /Tcsource/bases/ConsoleKeepPath.c /Fobuild\temp.win-amd64-3.5\Release\source/bases/ConsoleK
+eepPath.obj
+    ConsoleKeepPath.c
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\link.exe /nologo /INCREMENTAL:NO /LTCG /MANIFEST:EMBED,ID=1 /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\libs /LIBPATH:c:\Users\jame
+s\AppData\Local\Programs\Python\Python35\libs /LIBPATH:c:\Users\james\AppData\Local\Programs\Python\Python35 /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\PCbuild\amd64 "/LIBPATH:C:\Program Files (x86)\Micr
+osoft Visual Studio 14.0\VC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\ucrt\x64" "/LIBPATH:C:\Program F
+iles (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\um\x64" build\temp.win-amd64-3.5\Release\source/bases/ConsoleKeepPath.obj /OUT:build\lib.win-amd64-3.5\
+cx_Freeze\bases\ConsoleKeepPath.exe /MANIFEST
+    Generating code
+    Finished generating code
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -Ibuild\temp.win-amd64-3.5 -Ic:\users\james\projects\spafit\test_cx_freeze\venv\include -Ic:\Users\james
+\AppData\Local\Programs\Python\Python35\include -Ic:\Users\james\AppData\Local\Programs\Python\Python35\include "-IC:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" "-IC:\Program Files (x86)\Microsoft Visua
+l Studio 14.0\VC\ATLMFC\INCLUDE" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10
+.0.10586.0\shared" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.10586.0\winrt" /Tcsource/bases/Win32GUI.c /Fobuild\temp.win-amd64-3.5\Release\s
+ource/bases/Win32GUI.obj
+    Win32GUI.c
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\x86_amd64\link.exe /nologo /INCREMENTAL:NO /LTCG /MANIFEST:EMBED,ID=1 /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\libs /LIBPATH:c:\Users\jame
+s\AppData\Local\Programs\Python\Python35\libs /LIBPATH:c:\Users\james\AppData\Local\Programs\Python\Python35 /LIBPATH:c:\users\james\projects\spafit\test_cx_freeze\venv\PCbuild\amd64 "/LIBPATH:C:\Program Files (x86)\Micr
+osoft Visual Studio 14.0\VC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\LIB\amd64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\ucrt\x64" "/LIBPATH:C:\Program F
+iles (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64" "/LIBPATH:C:\Program Files (x86)\Windows Kits\10\lib\10.0.10586.0\um\x64" user32.lib build\temp.win-amd64-3.5\Release\source/bases/Win32GUI.obj /OUT:build\lib.win-amd64-
+3.5\cx_Freeze\bases\Win32GUI.exe /MANIFEST
+    Generating code
+    Finished generating code
+    running build_scripts
+    creating build\scripts-3.5
+    copying and adjusting cxfreeze -> build\scripts-3.5
+    copying and adjusting cxfreeze-quickstart -> build\scripts-3.5
+    error: file 'C:\Users\james\AppData\Local\Temp\pip-build-v084ipn9\cx-freeze\cxfreeze-postinstall' does not exist
+
+    ----------------------------------------
+Command "c:\users\james\projects\spafit\test_cx_freeze\venv\scripts\python.exe -u -c "import setuptools, tokenize;__file__='C:\\Users\\james\\AppData\\Local\\Temp\\pip-build-v084ipn9\\cx-freeze\\setup.py';exec(compile(ge
+tattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record C:\Users\james\AppData\Local\Temp\pip-cmdndupo-record\install-record.txt --single-version-externally-managed --co
+mpile --install-headers c:\users\james\projects\spafit\test_cx_freeze\venv\include\site\python3.5\cx-freeze" failed with error code 1 in C:\Users\james\AppData\Local\Temp\pip-build-v084ipn9\cx-freeze\
+
+c:\Users\james\projects\spafit\test_cx_freeze>

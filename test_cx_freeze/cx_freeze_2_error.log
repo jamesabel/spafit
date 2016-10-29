@@ -1,0 +1,9 @@
+
+# *** Python 3.4 ***
+
+c:\Users\james\projects\spafit\test_cx_freeze>venv\Scripts\pip3.exe install -U -r requirements.txt
+Collecting PyQt5 (from -r requirements.txt (line 1))
+  Could not find a version that satisfies the requirement PyQt5 (from -r requirements.txt (line 1)) (from versions: )
+No matching distribution found for PyQt5 (from -r requirements.txt (line 1))
+
+c:\Users\james\projects\spafit\test_cx_freeze>
