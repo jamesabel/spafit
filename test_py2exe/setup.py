@@ -1,12 +1,12 @@
 
-import distutils.core
-import test_py2exe
+from distutils.core import setup
+import py2exe
 
 # todo: WIP - finish on a Windows system
 
-distutils.core.setup(
+setup(
 
-    name='spafit',
+    name='test_py2exe',
     version='0.0.0',
     author='abel',
     author_email='j@abel.co',

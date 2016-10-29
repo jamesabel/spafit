@@ -1,4 +1,3 @@
-# get PyQt5 from a .exe installer
-#PyQt5
+PyQt5
 cryptography
 py2exe

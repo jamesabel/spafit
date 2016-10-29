@@ -8,7 +8,12 @@ import cryptography.fernet
 
 def main():
 
-    app = QApplication(sys.argv)
+    app = QApplication([])
+
+    if len(sys.argv) >= 2:
+        status_file_path = sys.argv[1]
+    else:
+        status_file_path = 'spafit_status.txt'
 
     m = b'does this work?'
     s = 'original message:\n' + str(m) + '\n\n'
@@ -25,6 +30,9 @@ def main():
     window.show()
 
     app.exec_()
+
+    with open(status_file_path, 'w') as f:
+        f.write('PASS\n')
 
 if __name__ == '__main__':
 
