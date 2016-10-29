@@ -1,0 +1,158 @@
+92 INFO: PyInstaller: 3.2
+93 INFO: Python: 3.5.2
+93 INFO: Platform: Windows-7-6.1.7601-SP1
+95 INFO: wrote c:\Users\james\projects\spafit\test_pyinstaller\main.spec
+95 INFO: UPX is not available.
+98 INFO: Extending PYTHONPATH with paths
+['c:\\Users\\james\\projects\\spafit\\test_pyinstaller',
+ 'c:\\Users\\james\\projects\\spafit\\test_pyinstaller']
+98 INFO: checking Analysis
+98 INFO: Building Analysis because out00-Analysis.toc is non existent
+98 INFO: Initializing module dependency graph...
+100 INFO: Initializing module graph hooks...
+102 INFO: Analyzing base_library.zip ...
+1868 INFO: running Analysis out00-Analysis.toc
+1909 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-locale-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2246 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-stdio-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2257 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-runtime-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2319 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-math-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2322 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-heap-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2329 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-filesystem-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2336 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-time-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2348 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-convert-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2350 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-environment-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2355 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-conio-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2358 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-process-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2373 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-string-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+2376 INFO: Caching module hooks...
+2381 INFO: Analyzing c:\Users\james\projects\spafit\test_pyinstaller\main.py
+2506 INFO: Processing pre-find module path hook   distutils
+2894 INFO: Loading module hooks...
+2895 INFO: Loading module hook "hook-lib2to3.py"...
+2898 INFO: Loading module hook "hook-sysconfig.py"...
+2899 INFO: Loading module hook "hook-xml.py"...
+3033 INFO: Loading module hook "hook-PyQt5.QtWidgets.py"...
+3036 INFO: Loading module hook "hook-PyQt5.py"...
+3036 INFO: Loading module hook "hook-pydoc.py"...
+3036 INFO: Loading module hook "hook-PyQt5.QtGui.py"...
+3500 INFO: Loading module hook "hook-distutils.py"...
+3500 INFO: Loading module hook "hook-cryptography.py"...
+3517 INFO: Loading module hook "hook-encodings.py"...
+3526 INFO: Loading module hook "hook-pkg_resources.py"...
+3717 INFO: Processing pre-safe import module hook   win32com
+3763 INFO: Loading module hook "hook-PyQt5.Qt.py"...
+3764 INFO: Loading module hook "hook-PyQt5.QtCore.py"...
+3840 INFO: Loading module hook "hook-pythoncom.py"...
+4070 INFO: Loading module hook "hook-pywintypes.py"...
+4302 INFO: Loading module hook "hook-PyQt5.QtPrintSupport.py"...
+4381 INFO: Loading module hook "hook-win32com.py"...
+4764 INFO: Looking for ctypes DLLs
+4776 INFO: Analyzing run-time hooks ...
+4779 INFO: Including run-time hook 'pyi_rth_pkgres.py'
+4781 INFO: Including run-time hook 'pyi_rth_win32comgenpy.py'
+4782 INFO: Including run-time hook 'pyi_rth_qt5.py'
+4783 INFO: Including run-time hook 'pyi_rth_qt5plugins.py'
+4793 INFO: Looking for dynamic libraries
+26625 WARNING: Can not get binary dependencies for file: C:\Windows\system32\api-ms-win-crt-utility-l1-1-0.dll
+Traceback (most recent call last):
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 695, in getImports
+    return _getImports_pe(pth)
+  File "c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\depend\bindepend.py", line 122, in _getImports_pe
+    dll, _ = sym.forwarder.split('.')
+TypeError: a bytes-like object is required, not 'str'
+31530 WARNING: Attempted to add Python module twice with different upper/lowercases: PyQt5.QtCore
+31530 WARNING: Attempted to add Python module twice with different upper/lowercases: PyQt5.Qt
+31530 WARNING: Attempted to add Python module twice with different upper/lowercases: PyQt5.QtPrintSupport
+31530 WARNING: Attempted to add Python module twice with different upper/lowercases: PyQt5.QtGui
+31530 WARNING: Attempted to add Python module twice with different upper/lowercases: PyQt5.QtWidgets
+31530 INFO: Looking for eggs
+31530 INFO: Using Python library c:\users\james\projects\spafit\test_pyinstaller\venv\scripts\python35.dll
+31530 INFO: Found binding redirects: 
+[]
+31543 INFO: Warnings written to c:\Users\james\projects\spafit\test_pyinstaller\build\main\warnmain.txt
+31563 INFO: checking PYZ
+31563 INFO: Building PYZ because out00-PYZ.toc is non existent
+31563 INFO: Building PYZ (ZlibArchive) c:\Users\james\projects\spafit\test_pyinstaller\build\main\out00-PYZ.pyz
+32203 INFO: checking PKG
+32203 INFO: Building PKG because out00-PKG.toc is non existent
+32203 INFO: Building PKG (CArchive) out00-PKG.pkg
+32243 INFO: Bootloader c:\users\james\projects\spafit\test_pyinstaller\venv\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run_d.exe
+32243 INFO: checking EXE
+32243 INFO: Building EXE because out00-EXE.toc is non existent
+32243 INFO: Building EXE from out00-EXE.toc
+32243 INFO: Appending archive to EXE c:\Users\james\projects\spafit\test_pyinstaller\build\main\main.exe
+32256 INFO: checking COLLECT
+32256 INFO: Building COLLECT because out00-COLLECT.toc is non existent
+32256 INFO: Building COLLECT out00-COLLECT.toc
