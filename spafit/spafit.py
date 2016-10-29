@@ -49,7 +49,7 @@ def get_python_dir():
 
 
 def get_status_file_name(test_name=DEFAULT_TEST_NAME):
-    return '%s_status.txt' % test_name
+    return '%s_status.log' % test_name
 
 
 def copy_files(src_dir, dest_dir):
