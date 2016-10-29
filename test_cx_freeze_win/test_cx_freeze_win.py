@@ -11,7 +11,7 @@ import spafit.spafit as spafit
 
 class TestCxFreeze(spafit.Spafit):
     def __init__(self):
-        super().__init__('cx_freeze')
+        super().__init__('cx_freeze_win')
 
     def run(self):
         # doesn't even install on Python 3.5
