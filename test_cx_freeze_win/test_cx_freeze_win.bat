@@ -1,3 +1,2 @@
 call make_venv.bat
-REM todo: implement in the Python code
-venv\scripts\python.exe setup.py cx_freeze
+venv\scripts\python.exe test_cx_freeze_win.py
