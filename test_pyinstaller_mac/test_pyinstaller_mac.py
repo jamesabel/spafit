@@ -37,7 +37,10 @@ class TestPyinstaller(spafit.Spafit):
             subprocess.call(pyinstaller_cmd, stderr=f1, shell=True)
             time.sleep(2)
 
-        subprocess.check_call('open ./dist/%s.app' % self.test_name, env={}, shell=True)
+        with open('pyinstaller_mac_2_error.log', 'w') as f1:
+            open_cmd = 'open ./dist/%s.app' % self.test_name
+            print(open_cmd)
+            subprocess.call(open_cmd, env={}, shell=True)
 
         print('%s done' % self.test_name)
 
