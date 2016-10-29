@@ -11,7 +11,7 @@ import spafit.spafit as spafit
 
 class TestPyinstaller(spafit.Spafit):
     def __init__(self):
-        super().__init__('pyinstaller')
+        super().__init__('pyinstaller_win')
 
     def run(self):
 
