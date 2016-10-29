@@ -102,5 +102,5 @@ def trim_log(test_name):
         key_string = lines[-1]
     with open('%s_1_error.log' % test_name, 'w') as f:
         for line in lines:
-            if key_string in line:
+            if key_string and key_string in line:
                 f.write('%s\n' % line)
