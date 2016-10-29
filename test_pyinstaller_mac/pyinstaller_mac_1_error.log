@@ -1,130 +1,130 @@
-33 INFO: PyInstaller: 3.2
-33 INFO: Python: 3.5.2
-44 INFO: Platform: Darwin-15.6.0-x86_64-i386-64bit
-49 INFO: wrote /Users/james/projects/spafit/test_pyinstaller_mac/main.spec
-51 INFO: UPX is not available.
-52 INFO: Extending PYTHONPATH with paths
+37 INFO: PyInstaller: 3.2
+37 INFO: Python: 3.5.2
+46 INFO: Platform: Darwin-15.6.0-x86_64-i386-64bit
+50 INFO: wrote /Users/james/projects/spafit/test_pyinstaller_mac/main.spec
+52 INFO: UPX is not available.
+53 INFO: Extending PYTHONPATH with paths
 ['/Users/james/projects/spafit/test_pyinstaller_mac',
  '/Users/james/projects/spafit/test_pyinstaller_mac']
-52 INFO: checking Analysis
-52 INFO: Building Analysis because out00-Analysis.toc is non existent
-52 INFO: Initializing module dependency graph...
-53 INFO: Initializing module graph hooks...
-54 INFO: Analyzing base_library.zip ...
-1654 INFO: running Analysis out00-Analysis.toc
-1661 INFO: Caching module hooks...
-1663 INFO: Analyzing /Users/james/projects/spafit/test_pyinstaller_mac/main.py
-1763 INFO: Processing pre-find module path hook   distutils
-2079 INFO: Loading module hooks...
-2079 INFO: Loading module hook "hook-PyQt5.QtWidgets.py"...
-2080 INFO: Loading module hook "hook-encodings.py"...
-2087 INFO: Loading module hook "hook-lib2to3.py"...
-2091 INFO: Loading module hook "hook-pkg_resources.py"...
-2248 INFO: Processing pre-safe import module hook   win32com
+53 INFO: checking Analysis
+54 INFO: Building Analysis because out00-Analysis.toc is non existent
+54 INFO: Initializing module dependency graph...
+54 INFO: Initializing module graph hooks...
+55 INFO: Analyzing base_library.zip ...
+1752 INFO: running Analysis out00-Analysis.toc
+1760 INFO: Caching module hooks...
+1762 INFO: Analyzing /Users/james/projects/spafit/test_pyinstaller_mac/main.py
+1865 INFO: Processing pre-find module path hook   distutils
+2188 INFO: Loading module hooks...
+2189 INFO: Loading module hook "hook-cryptography.py"...
+2198 INFO: Loading module hook "hook-sysconfig.py"...
+2198 INFO: Loading module hook "hook-PyQt5.py"...
+2256 INFO: Loading module hook "hook-lib2to3.py"...
+2258 INFO: Loading module hook "hook-pydoc.py"...
+2258 INFO: Loading module hook "hook-PyQt5.Qt.py"...
+2259 INFO: Loading module hook "hook-xml.py"...
+2418 INFO: Loading module hook "hook-PyQt5.QtCore.py"...
+2474 INFO: Loading module hook "hook-PyQt5.QtWidgets.py"...
+2475 INFO: Loading module hook "hook-encodings.py"...
+2482 INFO: Loading module hook "hook-distutils.py"...
+2483 INFO: Loading module hook "hook-pkg_resources.py"...
+2503 INFO: Processing pre-safe import module hook   win32com
 Traceback (most recent call last):
   File "<string>", line 2, in <module>
 ImportError: No module named 'win32com'
-2283 INFO: Processing pre-safe import module hook   win32com
+2536 INFO: Processing pre-safe import module hook   win32com
 Traceback (most recent call last):
   File "<string>", line 2, in <module>
 ImportError: No module named 'win32com'
-2317 INFO: Processing pre-safe import module hook   win32com
+2571 INFO: Processing pre-safe import module hook   win32com
 Traceback (most recent call last):
   File "<string>", line 2, in <module>
 ImportError: No module named 'win32com'
-2352 INFO: Processing pre-safe import module hook   win32com
+2605 INFO: Processing pre-safe import module hook   win32com
 Traceback (most recent call last):
   File "<string>", line 2, in <module>
 ImportError: No module named 'win32com'
-2391 INFO: Loading module hook "hook-pydoc.py"...
-2391 INFO: Loading module hook "hook-PyQt5.QtGui.py"...
-2746 INFO: Loading module hook "hook-cryptography.py"...
-2757 INFO: Loading module hook "hook-distutils.py"...
-2758 INFO: Loading module hook "hook-PyQt5.py"...
-2811 INFO: Loading module hook "hook-PyQt5.QtCore.py"...
-2869 INFO: Loading module hook "hook-xml.py"...
-3028 INFO: Loading module hook "hook-sysconfig.py"...
-3028 INFO: Loading module hook "hook-PyQt5.Qt.py"...
-3029 INFO: Loading module hook "hook-PyQt5.QtPrintSupport.py"...
-3107 INFO: Looking for ctypes DLLs
-3119 INFO: Analyzing run-time hooks ...
-3123 INFO: Including run-time hook 'pyi_rth_pkgres.py'
-3124 INFO: Including run-time hook 'pyi_rth_qt5.py'
-3125 INFO: Including run-time hook 'pyi_rth_qt5plugins.py'
-3133 INFO: Looking for dynamic libraries
-3135 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqico.dylib)
-3135 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqico.dylib)
-3136 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtiff.dylib)
-3137 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtiff.dylib)
-3138 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwebp.dylib)
-3138 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwebp.dylib)
-3140 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqjpeg.dylib)
-3141 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqjpeg.dylib)
-3142 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqdds.dylib)
-3142 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqdds.dylib)
-3145 ERROR: Can not find path ./QtSvg.framework/Versions/5/QtSvg (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
-3145 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
-3145 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
-3145 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
-3146 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqgif.dylib)
-3146 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqgif.dylib)
-3149 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqmacjp2.dylib)
-3149 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqmacjp2.dylib)
-3149 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqmacjp2.dylib)
-3153 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
-3153 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
-3153 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
-3153 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
-3153 ERROR: Can not find path ./QtPrintSupport.framework/Versions/5/QtPrintSupport (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
-3155 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
-3155 ERROR: Can not find path ./QtPrintSupport.framework/Versions/5/QtPrintSupport (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
-3155 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
-3155 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
-3157 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwbmp.dylib)
-3157 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwbmp.dylib)
-3159 ERROR: Can not find path ./QtSvg.framework/Versions/5/QtSvg (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
-3159 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
-3159 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
-3159 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
-3161 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqicns.dylib)
-3161 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqicns.dylib)
-3163 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqoffscreen.dylib)
-3163 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqoffscreen.dylib)
-3163 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqoffscreen.dylib)
-3165 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqminimal.dylib)
-3165 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqminimal.dylib)
-3165 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqminimal.dylib)
-3167 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtga.dylib)
-3167 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtga.dylib)
-3169 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtCore.so)
-3173 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
-3173 ERROR: Can not find path ./QtPrintSupport.framework/Versions/5/QtPrintSupport (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
-3173 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
-3173 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
-3175 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtGui.so)
-3175 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtGui.so)
-3254 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtWidgets.so)
-3254 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtWidgets.so)
-3254 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtWidgets.so)
-3259 INFO: Looking for eggs
-3259 INFO: Using Python library /Library/Frameworks/Python.framework/Versions/3.5/Python
-3274 INFO: Warnings written to /Users/james/projects/spafit/test_pyinstaller_mac/build/main/warnmain.txt
-3306 INFO: checking PYZ
-3306 INFO: Building PYZ because out00-PYZ.toc is non existent
-3306 INFO: Building PYZ (ZlibArchive) /Users/james/projects/spafit/test_pyinstaller_mac/build/main/out00-PYZ.pyz
-3691 INFO: checking PKG
-3691 INFO: Building PKG because out00-PKG.toc is non existent
-3691 INFO: Building PKG (CArchive) out00-PKG.pkg
-3709 INFO: Bootloader /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyInstaller/bootloader/Darwin-64bit/runw_d
-3709 INFO: checking EXE
-3709 INFO: Building EXE because out00-EXE.toc is non existent
-3709 INFO: Building EXE from out00-EXE.toc
-3710 INFO: Appending archive to EXE /Users/james/projects/spafit/test_pyinstaller_mac/build/main/main
-3717 INFO: Fixing EXE for code signing /Users/james/projects/spafit/test_pyinstaller_mac/build/main/main
-3731 INFO: checking COLLECT
-3732 INFO: Building COLLECT because out00-COLLECT.toc is non existent
-3732 INFO: Building COLLECT out00-COLLECT.toc
-6261 INFO: checking BUNDLE
-6262 INFO: Building BUNDLE because out00-BUNDLE.toc is non existent
-6262 INFO: Building BUNDLE out00-BUNDLE.toc
-8111 INFO: moving BUNDLE data files to Resource directory
+2817 INFO: Loading module hook "hook-PyQt5.QtGui.py"...
+3189 INFO: Loading module hook "hook-PyQt5.QtPrintSupport.py"...
+3264 INFO: Looking for ctypes DLLs
+3276 INFO: Analyzing run-time hooks ...
+3281 INFO: Including run-time hook 'pyi_rth_pkgres.py'
+3282 INFO: Including run-time hook 'pyi_rth_qt5.py'
+3283 INFO: Including run-time hook 'pyi_rth_qt5plugins.py'
+3293 INFO: Looking for dynamic libraries
+3295 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
+3295 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
+3296 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
+3296 ERROR: Can not find path ./QtSvg.framework/Versions/5/QtSvg (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/iconengines/libqsvgicon.dylib)
+3298 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqmacjp2.dylib)
+3298 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqmacjp2.dylib)
+3298 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqmacjp2.dylib)
+3300 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
+3300 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
+3300 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
+3300 ERROR: Can not find path ./QtSvg.framework/Versions/5/QtSvg (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqsvg.dylib)
+3302 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqoffscreen.dylib)
+3303 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqoffscreen.dylib)
+3303 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqoffscreen.dylib)
+3305 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtiff.dylib)
+3305 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtiff.dylib)
+3307 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqico.dylib)
+3307 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqico.dylib)
+3309 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwebp.dylib)
+3309 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwebp.dylib)
+3310 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqgif.dylib)
+3311 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqgif.dylib)
+3312 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwbmp.dylib)
+3312 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqwbmp.dylib)
+3317 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
+3317 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
+3317 ERROR: Can not find path ./QtPrintSupport.framework/Versions/5/QtPrintSupport (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
+3318 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
+3318 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqcocoa.dylib)
+3320 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqminimal.dylib)
+3321 ERROR: Can not find path ./QtDBus.framework/Versions/5/QtDBus (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqminimal.dylib)
+3321 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/platforms/libqminimal.dylib)
+3323 ERROR: Can not find path ./QtPrintSupport.framework/Versions/5/QtPrintSupport (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
+3323 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
+3323 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
+3323 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/printsupport/libcocoaprintersupport.dylib)
+3325 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtga.dylib)
+3325 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqtga.dylib)
+3326 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqicns.dylib)
+3327 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqicns.dylib)
+3328 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqjpeg.dylib)
+3328 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqjpeg.dylib)
+3330 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqdds.dylib)
+3330 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/Qt/plugins/imageformats/libqdds.dylib)
+3335 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtCore.so)
+3338 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
+3338 ERROR: Can not find path ./QtPrintSupport.framework/Versions/5/QtPrintSupport (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
+3338 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
+3338 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtPrintSupport.so)
+3340 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtGui.so)
+3340 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtGui.so)
+3415 ERROR: Can not find path ./QtGui.framework/Versions/5/QtGui (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtWidgets.so)
+3416 ERROR: Can not find path ./QtWidgets.framework/Versions/5/QtWidgets (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtWidgets.so)
+3416 ERROR: Can not find path ./QtCore.framework/Versions/5/QtCore (needed by /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyQt5/QtWidgets.so)
+3418 INFO: Looking for eggs
+3418 INFO: Using Python library /Library/Frameworks/Python.framework/Versions/3.5/Python
+3436 INFO: Warnings written to /Users/james/projects/spafit/test_pyinstaller_mac/build/main/warnmain.txt
+3467 INFO: checking PYZ
+3467 INFO: Building PYZ because out00-PYZ.toc is non existent
+3467 INFO: Building PYZ (ZlibArchive) /Users/james/projects/spafit/test_pyinstaller_mac/build/main/out00-PYZ.pyz
+3855 INFO: checking PKG
+3855 INFO: Building PKG because out00-PKG.toc is non existent
+3855 INFO: Building PKG (CArchive) out00-PKG.pkg
+3876 INFO: Bootloader /Users/james/projects/spafit/test_pyinstaller_mac/venv/lib/python3.5/site-packages/PyInstaller/bootloader/Darwin-64bit/runw_d
+3876 INFO: checking EXE
+3876 INFO: Building EXE because out00-EXE.toc is non existent
+3876 INFO: Building EXE from out00-EXE.toc
+3876 INFO: Appending archive to EXE /Users/james/projects/spafit/test_pyinstaller_mac/build/main/main
+3884 INFO: Fixing EXE for code signing /Users/james/projects/spafit/test_pyinstaller_mac/build/main/main
+3898 INFO: checking COLLECT
+3898 INFO: Building COLLECT because out00-COLLECT.toc is non existent
+3898 INFO: Building COLLECT out00-COLLECT.toc
+5805 INFO: checking BUNDLE
+5805 INFO: Building BUNDLE because out00-BUNDLE.toc is non existent
+5805 INFO: Building BUNDLE out00-BUNDLE.toc
+7669 INFO: moving BUNDLE data files to Resource directory
