@@ -12,6 +12,8 @@ def main():
     elif spafit.is_windows():
         subprocess.check_call('test_osnap_win.bat', cwd='test_osnap_win', shell=True)
         subprocess.check_call('test_pynsist.bat', cwd='test_pynsist', shell=True)
+        subprocess.check_call('test_py2exe.bat', cwd='test_py2exe', shell=True)
+        subprocess.check_call('test_cx_freeze.bat', cwd='test_cx_freeze', shell=True)
 
 if __name__ == '__main__':
     main()
