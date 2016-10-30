@@ -41,17 +41,14 @@ def rollup():
         tests[test].append(test_os)
     print(tests)
 
-    intro = "\
-## SPAFIT - Small Python Application Freezer/Installer Test ##\n\
-\
+    notes = "\
 Notes\n\
 - Generally tried to use Python 3.5.  If a tool failed with 3.5 I tried 3.4.\
   However, no tool that failed on 3.5 then passed on 3.4.\n\
     "
 
     with open('readme.md', 'w') as f:
-        f.write(intro)
-        f.write('\n')
+        f.write('## SPAFIT - Small Python Application Freezer/Installer Test ##\n')
         f.write('| Tool | Win | Mac | Issue |\n')
         f.write('|------|-----|-----|-------|\n')
         for test in sorted(tests):
@@ -59,3 +56,6 @@ Notes\n\
             win = test_os_to_strings(test, 'win' in tests[test], 'win', issues)
             mac = test_os_to_strings(test, 'mac' in tests[test], 'mac', issues)
             f.write('| %s | %s | %s | %s |\n' % (test, win, mac, str(issues)))
+        f.write('\n')
+        f.write(notes)
+        f.write('\n')
