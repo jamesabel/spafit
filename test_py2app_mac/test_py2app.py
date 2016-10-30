@@ -11,7 +11,7 @@ import spafit.spafit_mac as spafit_mac
 
 class TestPy2app(spafit.Spafit):
     def __init__(self):
-        super().__init__('py2app')
+        super().__init__('py2app_mac')
 
     def run(self):
 

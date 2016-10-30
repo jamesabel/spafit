@@ -11,7 +11,7 @@ import spafit.spafit as spafit
 
 class TestPy2exe(spafit.Spafit):
     def __init__(self):
-        super().__init__('py2exe')
+        super().__init__('py2exe_win')
 
     def run(self):
 
