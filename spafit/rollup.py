@@ -34,7 +34,7 @@ def test_os_to_strings(test_name, supported, test_os, issues):
             for file_path in glob.glob(os.path.join(test_dir, '*_error.log')):
                 with open(file_path) as f:
                     for l in f:
-                        issues.append('%s\n' % l)
+                        issues.append(l.strip())
     else:
         status = ':no_entry: Not Supported'
     return status
@@ -61,7 +61,7 @@ Notes\n\
             issues = []
             win = test_os_to_strings(test, 'win' in tests[test], 'win', issues)
             mac = test_os_to_strings(test, 'mac' in tests[test], 'mac', issues)
-            f.write('| %s | %s | %s | %s |\n' % (test, win, mac, str(issues)))
+            f.write('| %s | %s | %s | %s |\n' % (test, win, mac, '<br>'.join(issues)))
         f.write('\n')
         f.write(notes)
         f.write('\n')
