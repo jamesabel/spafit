@@ -32,9 +32,8 @@ def test_os_to_strings(test_name, supported, test_os, issues):
         if 'fail' in status.lower():
             s = ''
             for file_path in glob.glob(os.path.join(test_dir, '*_error.log')):
-                with open(file_path) as f:
-                    for l in f:
-                        issues.append(l.strip())
+                if os.path.exists(file_path):
+                    issues.append('https://github.com/jamesabel/spafit/blob/master/%s' % file_path)
     else:
         status = ':no_entry: Not Supported'
     return status
