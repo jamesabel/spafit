@@ -35,7 +35,7 @@ def test_os_to_strings(test_name, supported, test_os, issues):
                 if os.path.exists(file_path):
                     issues.append('https://github.com/jamesabel/spafit/blob/master/%s' % file_path)
     else:
-        status = ':no_entry: Not Supported'
+        status = ':no_entry_sign: Not Supported'
     return status
 
 
