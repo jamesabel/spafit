@@ -11,7 +11,7 @@ import spafit.spafit as spafit
 
 class TestPynsist(spafit.Spafit):
     def __init__(self):
-        super().__init__('pynsist')
+        super().__init__('pynsist_win')
 
     def run(self):
 
