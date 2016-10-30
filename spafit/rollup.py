@@ -17,8 +17,9 @@ def test_name_os_from_dir(test_dir):
 
 
 def test_os_to_strings(test_name, supported, test_os, issues):
+    test_dir = 'test_' + test_name + '_' + test_os
     if supported:
-        status_file_path = os.path.join('test_' + test_name + '_' + test_os, test_name.replace('test_', '') + '_' + test_os + '_status.log')
+        status_file_path = os.path.join(test_dir, test_name.replace('test_', '') + '_' + test_os + '_status.log')
         if os.path.exists(status_file_path):
             with open(status_file_path) as f:
                 status = f.readline().strip()
@@ -27,8 +28,13 @@ def test_os_to_strings(test_name, supported, test_os, issues):
             else:
                 status = ':x: %s' % status
         else:
-            status = ':x: FAILED'
-        # issues.append(test_name)
+            status = ':x: FAIL'
+        if 'fail' in status.lower():
+            s = ''
+            for file_path in glob.glob(os.path.join(test_dir, '*_error.log')):
+                with open(file_path) as f:
+                    for l in f:
+                        issues.append('%s\n' % l)
     else:
         status = ':no_entry: Not Supported'
     return status
