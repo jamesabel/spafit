@@ -1,4 +1,4 @@
-
+import os
 import sys
 
 from PyQt5.QtWidgets import QApplication, QLabel
@@ -14,6 +14,9 @@ def main():
         status_file_path = sys.argv[1]
     else:
         status_file_path = 'spafit_status.log'
+
+    print('status file: {}'.format(status_file_path))
+    print('cwd: {}'.format(os.getcwd()))
 
     m = b'does this work?'
     s = 'original message:\n' + str(m) + '\n\n'

@@ -5,4 +5,6 @@ cryptography
 py2app; sys_platform == 'darwin'
 py2exe; sys_platform == 'win32'
 pynsist; sys_platform == 'win32'
-osnap
+osnap; sys_platform == 'win32' or sys_platform == 'darwin'
+cx_Freeze
+Nuitka
