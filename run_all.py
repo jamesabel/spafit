@@ -11,6 +11,11 @@ def main():
         subprocess.check_call('./test_osnap_mac.sh', cwd='test_osnap_mac', shell=True)
         subprocess.check_call('./test_py2app_mac.sh', cwd='test_py2app_mac', shell=True)
         subprocess.check_call('./test_pyinstaller_mac.sh', cwd='test_pyinstaller_mac', shell=True)
+    elif spafit.is_linux():
+        subprocess.check_call('./test_pyinstaller_linux.sh', cwd='test_pyinstaller_linux', shell=True)
+        subprocess.check_call('./test_briefcase_linux.sh', cwd='test_briefcase_linux', shell=True)
+        subprocess.check_call('./test_cx_freeze_linux.sh', cwd='test_cx_freeze_linux', shell=True)
+        subprocess.check_call('./test_nuitka_linux.sh', cwd='test_nuitka_linux', shell=True)
     elif spafit.is_windows():
         # briefcase does not yet support Windows
         # subprocess.check_call('test_briefcase_win.bat', cwd='test_briefcase_win', shell=True)

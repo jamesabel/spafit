@@ -19,6 +19,9 @@ class Spafit():
         # derived classes provide this
         raise NotImplementedError
 
+    def get_status_file_name(self):
+        return get_status_file_name(self.test_name)
+
 
 def is_windows():
     return platform.system().lower()[0] == 'w'
@@ -27,6 +30,10 @@ def is_windows():
 def is_mac():
     # darwin
     return platform.system().lower()[0] == 'd'
+
+
+def is_linux():
+    return platform.system().lower()[0] == 'l'
 
 
 def get_pip_path():
@@ -41,6 +48,8 @@ def get_python_dir():
     # todo: allow to be set via en environment variable
     if is_mac():
         return '/Library/Frameworks/Python.framework/Versions/3.5/bin'
+    elif is_linux():
+        return '/usr/bin'
     elif is_windows():
         # figure this out when I get to Windows
         raise NotImplementedError
@@ -59,6 +68,8 @@ def copy_files(src_dir, dest_dir):
     elif is_mac():
         # darwin == mac
         files.append('main.sh')
+    elif is_linux():
+        pass
     else:
         raise NotImplementedError
     [shutil.copy2(os.path.join(src_dir, fn), os.path.join(dest_dir, fn)) for fn in files]
